@@ -1,0 +1,80 @@
+% !TEX root =../main.tex
+\section{条件文}
+  \subsection{条件文}
+    \begin{Definition}[条件文]
+  \ \\
+  　2つの命題$p$および$q$を，「$p$ならば$q$である」という形式で結んだ文を条件文という．このとき$p$を仮定，$q$を結論といい，$p \to q$ と表す．
+  \end{Definition} 
+ \begin{Theorem}[条件文の同値関係]
+ \ \\
+ 　「$p$ならば$q$である」という条件文は，「$p$でないか，または$q$である」という命題と同値である。すなわち，$p \to q \equiv  (\sim p) \lor q$となる．
+ \end{Theorem}
+\begin{Proof}
+\ \\
+条件文$p \to q$は$\sim(p \land \sim q)$である．\\
+ド・モルガンの定理より，$(\sim p)\lor (\sim(\sim q))$\\
+よって，$p \to q \equiv (\sim p) \lor q$
+\end{Proof}
+ \begin{exam}[条件文の否定]
+  \ \\
+ 　「$p$ならば$q$である」という条件文の否定は，$\sim((\sim p)\lor q) \equiv p \land (\sim q)$であるから，「$p$であって$q$でない」となる．
+ \end{exam}
+ \begin{Definition}[双条件文]
+  \ \\
+ 　「$p$ならば$q$であり，かつ$q$ならば$p$である」という条件文を双条件文といい$p \leftrightarrow q$と表す．
+ \end{Definition}
+ \subsection{条件文の逆・裏・対偶}
+ \begin{Definition}[条件文の逆]
+  \ \\
+ 　「$p$ならば$q$で
+ある」という条件文に対して，「$q$ならば$p$である」という条件文をもとの条件文の逆といい，$p \to q$と表す．
+  \end{Definition}  
+  \begin{Definition}[条件文の裏]
+  \ \\
+ 　「$p$ならば$q$である」という条件文に対して，「$p$でないならば$q$でない」という条件文をもとの条件文の裏といい，$\sim p \to \sim q$と表す．
+  \end{Definition}  
+  \begin{Definition}[条件文の対偶]
+  \ \\
+ 　「$p$ならば$q$である」という条件文に対して，「$q$でないならば$p$でない」という条件文をもとの条件文の対偶といい，$\sim q \to \sim p$と表す．
+  \end{Definition}  
+  \begin{exam}
+  \ \\
+ 　条件文$p,q$の逆，裏および対偶は次のようになる．
+  \begin{center}
+  %\begin{tabular}{| l | l | | l | l | l | } \hline
+   \begin{tabular}{| c | c | | c | c | c | c | } \hline
+    $ p $ & $ q $ & $ p \to q$ & $ q \to p$ & $\sim p \to \sim q$ & $\sim q \to \sim p$ \\ \hline
+    $ T $ & $ T $ & $ T $ & $ T $ & $ T $ & $ T $ \\
+    $ T $ & $ F $ & $ F $ & $ T $ & $ T $ & $ F $ \\
+    $ F $ & $ T $ & $ T $ & $ F $ & $ F $ & $ T $ \\
+    $ F $ & $ F $ & $ T $ & $ T $ & $ T $ & $ T $ \\ \hline
+  \end{tabular}
+\end{center}
+\end{exam}
+\begin{Theorem}[対偶の同値性]
+\ \\
+　条件文とその対偶のどちらかが真である場合，他方もまた真である．
+　\end{Theorem}
+　\begin{Proof}
+　\ \\
+　真理表より明らか．
+　\end{Proof}
+　 \subsection{必要条件と十分条件}
+  \begin{Definition}[必要条件と十分条件]
+  \ \\
+ 　$p \to q$であるとき，$q$を$p$であるための必要条件，$p$を$q$であるための十分条件という．
+  \end{Definition}  　 
+  \begin{Definition}[必要十分条件]
+  \ \\
+ 　$p \to q \land q \to p$であるとき，$q$を$p$であるための必要十分条件といい$p \rightleftharpoons q$で表す．
+  \end{Definition}  　 
+  \subsection{真理集合}
+  \begin{Definition}[命題関数]
+  \ \\ 
+　集合$X$の元$x\in X$に対して，その真偽が判定できるような条件$p$ が与えられたとき，$X$を定義域，値域を  \{ T, F \} とする命題関数という。
+　\end{Definition}
+  \subsection{全称命題と特称命題}
+    \begin{Definition}[全称命題]
+  \ \\ 
+　集合$X$の元$x\in X$に対して，その真偽が判定できるような条件$p$ が与えられたとき，$X$を定義域，値域を  \{ T, F \} とする命題関数という。
+　\end{Definition}

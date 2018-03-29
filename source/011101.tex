@@ -1,0 +1,146 @@
+% !TEX root =../main.tex
+\section{ユークリッド空間}
+\subsection{1次元ユークリッド空間}
+\begin{Definition}[絶対値]
+\ \\
+　実数$x$について
+\begin{eqnarray}
+ |x|=
+  \begin{cases}
+   x  & (x \geq 0)\\
+   -x & (x< 0)
+  \end{cases}
+\end{eqnarray}
+を$x$の絶対値という．
+\end{Definition}
+
+\begin{Theorem}[三角不等式]
+　\ \\
+　任意の実数$a,b$に対して次の関係が成り立つ．この関係式を三角不等式という．
+　\begin{eqnarray}
+　|a+b|\leq |a|+|b|
+　\end{eqnarray}
+　\begin{Proof}
+　\ \\
+　\begin{eqnarray}
+　\begin{split}
+(a+b)^{2} &\leq (|a|+|b|)^2\\
+ a^2+2ab+b^2 &\leq a^2+2|a||b|+b^2\\
+ ab-|a||b| &\leq 0\\
+\end{split}
+　\end{eqnarray}
+　\end{Proof}
+\end{Theorem}
+
+\begin{Definition}
+\ \\
+　数直線上の2点$x,y \in  \mathbb{R}$を結ぶ線分の長さは，絶対値を用いて
+　\begin{eqnarray}
+d^{(1)}(x,y)=|x-y|=\sqrt{(x-y)^2}
+　\end{eqnarray}
+　で与えられる．
+\end{Definition}
+\subsection{n次元ユークリッド空間}
+\subsection{中間値の定理}
+\begin{Theorem}[中間値の定理]
+\ \\
+　部分集合$X \subset \mathbb{R}^{n}$を連結とし，$f:X\to \mathbb{R}^1$を連続関数とすると
+　\begin{eqnarray}
+　	\forall \alpha, \beta \in f (X), \alpha < \beta \hspace{10mm} \left( [a,b] \subset f(X) \right)
+　\end{eqnarray}
+\end{Theorem}
+
+
+\section{円}
+\subsection{弧度法}
+\begin{Definition}
+\ \\
+　単位円において，弧の長さが$1$となる扇形の中心角を$1[rad]$と表す．
+\end{Definition}
+\section{三角形}
+\subsection{三角形の定義}
+\begin{Definition}[三角形]
+\ \\
+　同一直線上にない3点$A,B,C$と，各点を結ぶ3つの線分からなる多角形を三角形といい，$\triangle{ABC}$と示す．
+　\end{Definition}
+\begin{Definition}[斜辺]
+\ \\
+　$\triangle{ABC}$において，最も長い辺を斜辺という．
+\end{Definition}
+\begin{Definition}[正三角形]
+\ \\
+　一片の長さが$a$の三角形を正三角形という．
+\end{Definition}
+\begin{Definition}[直角三角形]
+\ \\
+　三角形の３つの内角のうち最大の角が$90^\circ$の三角形を直角三角形という．
+\end{Definition}
+  \begin{Theorem}[三平方の定理]
+  \ \\
+　3辺の長さが$a,b,c$の直角三角形において次の関係が成り立つ．
+　\begin{eqnarray}
+　c^2=a^2+b^2 \hspace{10mm} (a,b,c>0)
+　\end{eqnarray}
+ \end{Theorem}
+ \subsection{三角形の面積}
+ \begin{Theorem}
+ \ \\
+ 　一般に三角形の面積$S$は底辺の長さ$a$と高さ$h$を用いて
+ 　\begin{eqnarray}
+ 　S=\frac{1}{2}ah
+ 　\end{eqnarray}
+ 　で与えられる．
+ 　\end{Theorem}
+\begin{Theorem}[ヘロンの公式]
+\ \\
+　3辺の長さが$a,b,c$の三角形とその面積$S$には次の関係が成り立つ．
+　\begin{eqnarray}
+　S=\sqrt{s(s-a)(s-b)(s-c)} \hspace{10mm} \left(s=\frac{a+b+c}{2} \right)
+　\end{eqnarray}
+\end{Theorem}
+\subsection{三角関数}
+\begin{Definition}{三角関数}
+\ \\
+　原点を中心として半径$r$1の円の円周上に点$P(x,y)$があり，$OP$と$x$軸とのなす角を$\theta$とする．この時，三角関数(正弦，余弦，正接)は
+\begin{align}
+\begin{split}
+&\mbox{正弦：} \sin \theta = \frac{y}{r}\\
+&\mbox{余弦：} \cos \theta = \frac{x}{r}\\
+&\mbox{正接：} \tan \theta = \frac{y}{x}\\
+\end{split}
+\end{align}
+　と定義される．ただし，$r=\sqrt{x^{2}+y^{2}}$のとき，$\tan \theta$は値を持たない．
+\end{Definition}
+\begin{Definition}{単位円}
+\ \\
+　半径が$1$であるような円を単位円という．単位円での三角関数は
+\begin{align}
+\begin{split}
+&\mbox{正弦：} \sin \theta = y\\
+&\mbox{余弦：} \cos \theta = x\\
+\end{split}
+\end{align}
+　となる．
+\end{Definition}
+\begin{Theorem}{正弦定理}
+\ \\ 
+　$\triangle ABC$において，$a=BC$，$b=CA$，$c=AB$，外接円の半径をを$r$とすると
+\begin{align}
+\begin{split}
+\frac{a} {\sin A} = \frac{b} {\sin B} = \frac{c} {\sin C} =2r
+\end{split}
+\end{align}
+　なる関係を正弦定理という．
+\end{Theorem}
+\begin{Theorem}{余弦定理}
+\ \\
+　$\triangle ABC$において，$a=BC$，$b=CA$，$c=AB=c$，$\alpha = \angle CAB$，$\beta = \angle  ABC$，$\gamma = \angle BCA$とすると
+\begin{align}
+\begin{split}
+a^{2} &= b^{2}+c^{2} - 2bc\cos \alpha \\
+b^{2} &= c^{2}+a^{2} - 2ca\cos \beta \\
+c^{2} &= a^{2}+b^{2} - 2ab\cos \gamma
+\end{split}
+\end{align}
+　なる関係を余弦定理という．
+\end{Theorem}

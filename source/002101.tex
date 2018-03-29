@@ -1,0 +1,51 @@
+% !TEX root =../main.tex
+\section{位相空間}
+\subsection{開集合と位相空間}
+\begin{Definition}[開集合]
+\ \\
+　$\forall a \in U(U\subset \mathbb{R})$に対してある$\varepsilon > 0$が存在し$N(x,\varepsilon) \subset U$が成り立つとき，$U$を開集合という．
+\end{Definition}
+\begin{Theorem}[開集合の性質]
+\ \\
+　開集合は次の性質を持つ．
+\begin{enumerate}
+\item $U_{1},\cdots,U_{n}$を$\mathbb{R}$の開集合とすると，$U_{1} \cap U_{2} \cdots  \cap U_{n}$もまた$\mathbb{R}$の開集合である．
+\item 集合族$U_{\lambda}(\lambda \in \Lambda)$に対して，$U_{\lambda}$が開集合ならば$\bigcup_{\lambda \in \Lambda} U_{\lambda}$である．
+\end{enumerate}
+\end{Theorem}
+\begin{Definition}[閉集合]
+\ \\
+$\mathbb{R}-F(F \subset \mathbb{R})$であるとき，$F$を閉集合という．
+\end{Definition}
+  \begin{Definition}[位相]
+  \ \\
+集合$S$に対し，部分集合の族$\mathcal{O}$が$S$の開集合系であるとは，次の条件を満たす場合をいう．
+ \begin{enumerate}
+ \item 
+ $S \in \mathcal{O}$　かつ$\emptyset \in \mathcal{O}$
+  \item
+  $m\in \mathbb{N},O_{1},\cdots,O_{m} \in \mathcal{O} \longrightarrow O_{1}\cap \cdots \cap O_{m}\in \mathcal{O}$
+ \item 
+ 任意の集合$\Lambda$に対し，各元$\lambda \in \Lambda$から$\mathcal{O}$の元$O_{\lambda} \in  \Lambda$への対応を与えたとき，\\
+ $\bigcup_{\lambda \in \Lambda} O_{\lambda} \in \mathcal{O}$
+\end{enumerate}
+集合$S$に開集合系$\mathcal{O}$が与えられているとき，「$\mathcal{O}$は$S$に位相（構造）を定める」もしくは「$S$ には$\mathcal{O}$による位相（構造）が入る」といい，$\mathcal{O}$の元を開集合(open set)とよぶ．このような位相構造が定められた集合$S$を位相空間(topological space) という．$S$の元を点という．
+ \end{Definition}
+ 
+ \begin{exam}
+　 \\ 
+ $[S,d]$を距離空間とする．
+ \begin{align*}
+ \mathcal{O}(d)=\{U \subset S | \forall p \in U, \exists \epsilon > 0;N_{\epsilon}(p)\subset U\}
+ \end{align*}
+ と置けば，$\mathcal{O}(d)$は開集合の公理$1\sim3$を満たす．
+ \end{exam}
+ 
+ \begin{Proof}
+　 \\ 
+ 1.　$\mathcal{O}(d)$の定義より明らか．\\
+ 2.\\
+ 3. \\
+ \end{Proof}
+ 
+

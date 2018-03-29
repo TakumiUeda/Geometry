@@ -1,0 +1,38 @@
+\documentclass[b5j,twoside,openany]{jreport}
+\usepackage{enumerate}
+\makeatletter
+\usepackage{amsmath}
+\usepackage{amsfonts}
+%\usepackage{showkeys}
+\usepackage{ascmac}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{multienum}
+\usepackage{bm}
+
+\renewcommand{\bibname}{参考文献}
+
+\input title/title.tex
+\input setting/fomulanumber.tex
+\input setting/header.tex
+\input setting/newtheory.tex
+\begin{document}
+\maketitle
+\setcounter{tocdepth}{2}
+\tableofcontents
+
+\chapter{命題と論理}
+\input  {source/001201.tex}
+\input  {source/001202.tex}
+\chapter{集合と写像}
+\input{source/001301.tex}
+\chapter{ユークリッド空間}
+\input {source/011101.tex}
+\chapter{位相空間}
+\input  {source/002101.tex}
+\chapter{付録}
+\input  {source/999999.tex}
+
+\end{document}

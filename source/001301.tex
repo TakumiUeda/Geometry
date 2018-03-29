@@ -1,0 +1,175 @@
+% !TEX root =../main.tex
+\section{集合}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{集合と元}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{Definition}[集合]
+  \ \\
+　集合（Set）とは確定した，互いに区別することのできる対象を1つにまとめたものである．
+  \end{Definition}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{Definition}[元]
+  \ \\
+ 　集合$X$に含まれているある要素$x$を$X$の元といい，$x \in X$で表す．$x$が$X$の元でないことは$x \not \in X$で表す．
+  \end{Definition}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{Definition}[空集合]
+\ \newline
+　一つも元が属さない集合を空集合といい，$\emptyset$で表す．
+\end{Definition}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+  \begin{Definition}[有限集合と無限集合]
+  \ \\
+　集合Aの元が有限個である場合，Aは有限集合であるという．Aが有限集合でない場合，Aは無限集合であるという．
+　\end{Definition}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{Definition}[全体集合]
+\ \newline
+　対象としているすべての集合を全体集合といい，$U$で表す．
+\end{Definition}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+　\begin{Definition}[特殊な数の全体集合]
+　\ \newline
+　特殊な数の全体集合を示す集合を次のように定義する．
+　\begin{center}
+   \begin{tabular}{ c  c } 
+    自然数 & $ \mathbb{N} $ \\ 
+    整数 & $ \mathbb{Z} $\\
+    有理数 & $ \mathbb{Q} $\\
+    実数  & $ \mathbb{R} $\\
+    複素数 & $ \mathbb{C} $\\ 
+  \end{tabular}
+\end{center}　
+\end{Definition}
+
+　\subsection{集合の表し方}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{Definition}[外延的記法]
+\ \\
+　集合の元をすべて列挙し, それを括弧\{\}でくくる表記法を外延的記法という．
+\end{Definition}
+\begin{exam}[外延的記法]
+\ \newline
+\begin{eqnarray}
+\begin{split}
+  \mathbb{N}&=(1,2,\cdots,n,\cdots)\\
+　\mathbb{Z}&=(\cdots , -n , \cdots , -2 ,-1, 0 , 1 ,2, \cdots , n , \cdots)
+\end{split}
+\end{eqnarray}
+\end{exam}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{Definition}[内延的記法]
+\ \\
+　集合の元を変数を用いて示す記法のことを内延的記法という．
+\end{Definition}
+\begin{exam}[内延的記法]
+\ \newline
+\begin{eqnarray}
+\begin{split}
+  A&=&\{x|a<2 \land x \in \mathbb{R}\} \\
+　B&=&\{y|P(x)\} \hspace{10mm}  (P(x)は述語)
+\end{split}
+\end{eqnarray}
+\end{exam}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \begin{Definition}[集合族]
+  \ \\
+  　添え字の付けられた集合$A_1，A_2,\cdots,A_k$を考える．このような集合の集まり$ \{ A_{1} , A_{2} , \cdots , A_{k} \}$を集合族という．
+  \end{Definition}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{集合の演算}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{部分集合}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{Definition}[部分集合]
+    \ \\
+    　$X$と$Y$を集合とする．$X$に含まれているどの要素も$Y$の元となっているとき，$X$は$Y$の部分集合であるといい，$X \subset Y$で表す．$B \subset A$かつ$B \not = A$であるとき，$B$は$A$の真部分集合であるといい，$B \subsetneq A$で表す．
+  \end{Definition}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{Definition}[相等]
+  \ \\
+  　集合$X，Y$において，$X \subset YかつY \subset X$のとき，$X$と$Y$は相等または同値であるといい，$X = Y$で表す．
+  \end{Definition}
+  \subsection{集合の演算}
+  \begin{Definition}[共通部分と和集合]
+  \ \\
+  　集合$A，B$を$X$の部分集合であるとする．$A$の元かつ$B$の元となる集合を$A$と$B$の共通部分といい，$A \cup B$で表す．すなわち
+  　\begin{align}
+  　A \cap B = \{ x \in X|x \in A \land x \in B \}
+  　\end{align}
+  　$A \cap B = \emptyset$のとき，AとBは互いに素という．\\
+ 　$A$の元および$B$の元であるものの全体のなす集合を$A$と$B$の和集合といい，$A \cup B$で」表す．すなわち，
+  　\begin{align}
+  　A \cup B = \{ x \in X|x \in A \lor x \in B \}
+  　\end{align}
+  \end{Definition}
+  \begin{Definition}[差集合]
+  \ \\
+  　$A$に属して$B$に属さない要素の全体を$A$から$B$を引いた差集合といい，$A-B$もしくは$A/B$と表す．すなわち，
+  　\begin{align}
+  　A - B = \{ x | x \in A \land x \not \in B \}
+  　\end{align}
+  \end{Definition}
+  \begin{Definition}[補集合]
+  \ \\
+  　集合$A$を集合$X$の部分集合であるとする．このとき$X-A$を$A$の$X$に関する補集合といい$A^{c}$と表す．
+  \end{Definition}  
+  \begin{Definition}[直積]
+  \ \\
+  　$X,Y\not= \emptyset$のとき，集合
+  　\begin{align}
+  　X \times Y = \{ (x,y) | x \in X \land y \in Y \}
+  　\end{align}
+  　を$X,Y$の直積という．
+  \end{Definition}
+\begin{plac}
+1.
+\end{plac}
+\section{区間と近傍}
+\subsection{区間}
+\begin{Definition}[区間]
+  \ ￥\
+  $a,b \in \mathbb{R}(a<b)$に対して，次を満たす集合を区間という．\\
+　開区間
+\begin{eqnarray}
+　\begin{split}
+　(a,b) &:= \{ x \in \mathbb{R} | a < x < b \} \\
+　(a,\infty) &:= \{ x \in \mathbb{R} | a < x \} \\
+　(-\infty,b) &:= \{ x \in \mathbb{R} | x < b \}
+　\end{split}
+　\end{eqnarray}
+　閉区間
+　\begin{eqnarray}
+　\begin{split}
+　[a,b] &:= \{x \in \mathbb{R} | a \leq x \leq b \} \\
+　 [a,\infty) &:= \{ x \in \mathbb{R} | a \leq x \} \\
+　 (-\infty,b] &:= \{ x \in \mathbb{R} | x \leq b \}
+　\end{split}
+　\end{eqnarray}
+　半開区間
+　\begin{eqnarray}
+　\begin{split}
+　[a,b) &:= \{ x \in \mathbb{R} | a \leq x < b \} \\
+　(a,b] &:= \{ x \in \mathbb{R} | a < x \leq b \}
+　\end{split}
+　\end{eqnarray}
+  \end{Definition}
+  \subsection{近傍}  
+\begin{Definition}[近傍]
+  \ \\
+  $\varepsilon >0,a \in \mathbb{R}$に対して，
+  \begin{eqnarray}
+  U_{\varepsilon}(a) := \{ x \in \mathbb{R} | |x-a| < \varepsilon \} = (a-\varepsilon,a+\varepsilon)
+  \end{eqnarray} 
+  とおく．この開区間$U_{\varepsilon}(a)$を点$a$の$\varepsilon-$近傍または単に近傍という．
+  \end{Definition}
+  \section{写像}
+  \begin{Definition}[写像]
+  \ \\
+　$X,Y$を集合とする．$X$の各要素$X \in x $に対して$Y$の各要素$y$がただ一つ対応するような関係を$X$から$Y$への写像という．対応$f$が$X$から$Y$への写像であるとき$f:X \to Y$と表す．
+ \end{Definition}
+ \begin{Definition}[像と定義域，値域]
+  \ \\
+　$f:X \to Y$を写像とする．
+  \end{Definition}
+  
