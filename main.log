@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2017.12.21)  2 APR 2018 15:21
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2017.12.21)  2 APR 2018 15:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -434,26 +434,27 @@ Package amsmath Warning: Cannot use `split' here;
 
 [14
 
-] [15] [16] [17]
+] [15]
 第 4 章
-) (./source/chapter4.tex [18
+[16
 
 ]
 第 5 章
-[19
+[17
+
+] [18]) (./source/chapter4.tex [19]
+第 6 章
+[20
 
 ]) 
 AED: lastpage setting LastPage
-[20]
+[21]
 \tf@thm=\write4
 \openout4 = `main.thm'.
 
  (./main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
@@ -465,4 +466,4 @@ Here is how much of TeX's memory you used:
  929 hyphenation exceptions out of 8191
  30i,15n,43p,343b,429s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (20 pages, 48120 bytes).
+Output written on main.dvi (21 pages, 48760 bytes).
