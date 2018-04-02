@@ -1,5 +1,88 @@
 % !TEX root =../main.tex
-\section{条件文}
+\chapter{命題と論理}
+\section{命題}
+\subsection{命題}
+  \begin{Definition}[命題]
+    \ \\
+ある事柄に対して正しいもしくは誤りであると判断できる主張を文で表したものを命題という．表記を簡潔にするため，記号$:$を用いて\\
+\centerline{$P:12$は$2$で割り切れる}
+と表す．
+\end{Definition}
+    \begin{Definition}[真と偽]
+    \ \\
+　命題が正しい場合，真理値が真（True）の命題であるといい，偽（False）である場合は真理値が偽の命題であるという．
+  \end{Definition}
+  \subsection{合成命題}
+  \begin{Definition}[合成命題]
+    \ \\
+　いくつかの命題を組み合わせた，あるいは否定した命題を，合成命題あるいは複合命題という．これに対し，元の命題を単純命題という．合成命題も真偽の判定ができるものでなければならない．
+  \end{Definition}  
+  \begin{Definition}[連言命題]
+    \ \\
+　命題$p,q$に対して，$p$および$q$のいずれも真であるときのみ真となり，他の場合に偽となる命題論理を連言命題あるいは論理積といい，$p\land q$と表す．
+  \end{Definition}
+  \begin{Definition}[包含的選言命題]
+    \ \\
+　命題$p,q$に対して，$p$および$q$のどちらかが真であるとき真となり，他の場合に偽となる合成命題を包含的選言命題といい，$p\lor q$と表す．
+  \end{Definition} 
+   \begin{Definition}[排他的選言命題]
+    \ \\
+　命題$p,q$に対して，$p$あるいは$q$のどちらかのみが真であり，他方が偽であるとき真となり，他の場合に偽となる合成命題を包含的選言命題といい，$p \underline{\lor} q$と表す．
+  \end{Definition}
+  \subsection{否定}
+  \begin{Definition}[否定]
+  \ \\
+　命題$P$に対して，$P$が真のとき偽，$P$が偽のとき真となる命題を否定命題といい，$ \sim P$または$\overline{P}$と示す．
+　\end{Definition} 
+ \begin{Theorem}[ド・モルガンの法則]
+ \ \\
+　任意の命題$P,Q$に対し次の法則が成り立つ．
+　\begin{align*}
+　&\sim(P \lor Q)=(\sim P) \land (\sim Q)&\\
+　&\sim(P \land Q)=(\sim P) \lor (\sim Q)&
+　\end{align*}
+ \end{Theorem}   
+   \begin{Definition}[多重否定]
+  \ \\
+　否定命題を否定した命題を二重否定命題といい，$ \sim(\sim P)$または$\overline{\overline{P}}$と示す．その真偽は元の命題$P$の真偽に等しい．
+  \end{Definition}
+\begin{Theorem}
+\ \\
+$p,q$を命題とすると，次が成り立つ．
+\begin{enumerate}
+ \item $p \to q \equiv (\sim p) \lor q$
+ \item $p \to q \equiv (\sim q) \to (\sim p)$
+ \item $\sim (p \to q) \equiv p \land (\sim q)$
+\end{enumerate}
+\end{Theorem}
+
+\begin{Proof}
+\end{Proof}
+\subsection{真理表}
+  \begin{Definition}[真理表]
+  \ \\
+　単純命題の真偽によって，合成命題の真偽がどうなるかを示した表を真理表という．このとき真はT(True)，偽は F(False) で表す．
+  \end{Definition} 
+ \begin {exam} 
+ \ \\
+　否定命題および連言命題、選言命題の真理表は次のようになる．
+\begin{center}
+  %\begin{tabular}{| l | l | | l | l | l | } \hline
+   \begin{tabular}{| c | c | | c | c | c | c | } \hline
+    $ p $ & $ q $ & $ \sim p$ & $\sim q$ & $p \land q$ & $p \lor q$ \\ \hline
+    $ T $ & $ T $ & $ F $ & $ F $ & $ T $ & $ T $ \\
+    $ T $ & $ F $ & $ F $ & $ T $ & $ F $ & $ T $ \\
+    $ F $ & $ T $ & $ T $ & $ F $ & $ F $ & $ T $ \\
+    $ F $ & $ F $ & $ T $ & $ T $ & $ F $ & $ F $ \\ \hline
+  \end{tabular}
+\end{center}
+\end{exam}
+  \subsection{命題の同値関係}
+  \begin{Definition}[同値]
+  \ \\
+　2 つの合成命題の真理表が一致するとき，同値であるといい，記号$\equiv$で結ぶ。
+  \end{Definition}  
+  \section{条件文}
   \subsection{条件文}
     \begin{Definition}[条件文]
   \ \\
