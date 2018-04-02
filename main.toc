@@ -33,7 +33,8 @@
 \contentsline {subsection}{\numberline {3.3.1}三角形の定義}{15}
 \contentsline {subsection}{\numberline {3.3.2}三角形の面積}{16}
 \contentsline {subsection}{\numberline {3.3.3}三角関数}{16}
-\contentsline {section}{\numberline {3.4}非ユークリッド空間}{17}
-\contentsline {chapter}{\numberline {第4章}位相空間}{18}
-\contentsline {section}{\numberline {4.1}位相空間}{18}
-\contentsline {subsection}{\numberline {4.1.1}開集合と位相空間}{18}
+\contentsline {section}{\numberline {3.4}多角形}{17}
+\contentsline {chapter}{\numberline {第4章}非ユークリッド空間}{18}
+\contentsline {chapter}{\numberline {第5章}位相空間}{19}
+\contentsline {section}{\numberline {5.1}位相空間}{19}
+\contentsline {subsection}{\numberline {5.1.1}開集合と位相空間}{19}
