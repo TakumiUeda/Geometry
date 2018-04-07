@@ -50,17 +50,23 @@ d^{(1)}(x,y)=|x-y|=\sqrt{(x-y)^2}
 　\end{eqnarray}
 \end{Theorem}
 \chapter{非ユークリッド空間}
-\chapter{空間図形}
-\section{円}
-\subsection{弧度法}
+\part{空間図形}
+\chapter{円}
+\section{弧度法}
 \begin{Definition}
 \ \\
 　単位円において，弧の長さが$1$となる扇形の中心角を$1[rad]$と表す．
 \end{Definition}
-
-\section{多角形}
-\section{三角形}
-\subsection{三角形の定義}
+\begin{Definition}[ひし形]
+対角線がそれぞれ$\alpha,\beta$のひし形の面積$S$は
+\begin{align}
+\begin{split}
+S= \frac{1}{2} \alpha \beta
+\end{split}
+\end{align}
+\end{Definition}
+\chapter{三角形}
+\section{三角形の定義}
 \begin{Definition}[三角形]
 \ \\
 　同一直線上にない3点$A,B,C$と，各点を結ぶ3つの線分からなる多角形を三角形といい，$\triangle{ABC}$と示す．
@@ -84,7 +90,8 @@ d^{(1)}(x,y)=|x-y|=\sqrt{(x-y)^2}
 　c^2=a^2+b^2 \hspace{10mm} (a,b,c>0)
 　\end{eqnarray}
  \end{Theorem}
- \subsection{三角形の面積}
+ 
+ \section{三角形の面積}
  \begin{Theorem}
  \ \\
  　一般に三角形の面積$S$は底辺の長さ$a$と高さ$h$を用いて
@@ -100,7 +107,9 @@ d^{(1)}(x,y)=|x-y|=\sqrt{(x-y)^2}
 　S=\sqrt{s(s-a)(s-b)(s-c)} \hspace{10mm} \left(s=\frac{a+b+c}{2} \right)
 　\end{eqnarray}
 \end{Theorem}
-\subsection{三角関数}
+
+\chapter{三角関数と諸定理}
+\section{三角関数}
 \begin{Definition}{三角関数}
 \ \\
 　原点を中心として半径$r=1$の円の円周上に点$P(x,y)$があり，$OP$と$x$軸とのなす角を$\theta$とする．この時，三角関数(正弦，余弦，正接)は
@@ -124,6 +133,9 @@ d^{(1)}(x,y)=|x-y|=\sqrt{(x-y)^2}
 \end{align}
 　となる．
 \end{Definition}
+\section{逆三角関数}
+
+\section{正弦定理}
 \begin{Theorem}{正弦定理}
 \ \\ 
 　$\triangle ABC$において，$a=BC$，$b=CA$，$c=AB$，外接円の半径をを$r$とすると
@@ -134,6 +146,7 @@ d^{(1)}(x,y)=|x-y|=\sqrt{(x-y)^2}
 \end{align}
 　なる関係を正弦定理という．
 \end{Theorem}
+\section{余弦定理}
 \begin{Theorem}{余弦定理}
 \ \\
 　$\triangle ABC$において，$a=BC$，$b=CA$，$c=AB=c$，$\alpha = \angle CAB$，$\beta = \angle  ABC$，$\gamma = \angle BCA$とすると
@@ -146,12 +159,17 @@ c^{2} &= a^{2}+b^{2} - 2ab\cos \gamma
 \end{align}
 　なる関係を余弦定理という．
 \end{Theorem}
-\section{四角形}
-\begin{Definition}[ひし形]
-対角線がそれぞれ$\alpha,\beta$のひし形の面積$S$は
+
+\begin{Theorem}{余弦定理}
+\ \\
+　$\triangle ABC$において，$a=BC$，$b=CA$，$c=AB=c$，$\alpha = \angle CAB$，$\beta = \angle  ABC$，$\gamma = \angle BCA$とすると
 \begin{align}
 \begin{split}
-S= \frac{1}{2} \alpha \beta
+a^{2} &= b^{2}+c^{2} - 2bc\cos \alpha \\
+b^{2} &= c^{2}+a^{2} - 2ca\cos \beta \\
+c^{2} &= a^{2}+b^{2} - 2ab\cos \gamma
 \end{split}
 \end{align}
-\end{Definition}
+　なる関係を余弦定理という．
+\end{Theorem}
+
