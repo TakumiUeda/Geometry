@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2017.12.21)  12 APR 2018 05:00
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2017.12.21)  5 MAY 2018 17:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -360,42 +360,27 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [3
-
-])
+))
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
 
-(./source/chapter1.tex
+(./source/chapter1.tex [3
 
-LaTeX Font Warning: Font shape `JT1/mc/m/sl' undefined
-(Font)              using `JT1/mc/m/n' instead on input line 2.
-
-
-LaTeX Font Warning: Font shape `JY1/mc/m/sl' undefined
-(Font)              using `JY1/mc/m/n' instead on input line 2.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[4]
+]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 2.
- [5
+ [4
 
 ]
 第 1 章
-Excluding 'comment' comment. [6
+Excluding 'comment' comment. [5
 
 ]
 第 2 章
-[7
+[6
 
 ]
 
@@ -406,7 +391,21 @@ LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
 LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
 (Font)              using `JY1/mc/m/n' instead on input line 102.
 
-[8] [9]
+
+LaTeX Font Warning: Font shape `JT1/mc/m/sl' undefined
+(Font)              using `JT1/mc/m/n' instead on input line 120.
+
+
+LaTeX Font Warning: Font shape `JY1/mc/m/sl' undefined
+(Font)              using `JY1/mc/m/n' instead on input line 120.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7] [8]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 193.
 
  (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
@@ -414,81 +413,25 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 193.
- [10])
-(./source/chapter2.tex [11]
+ [9])
+(./source/chapter2.tex [10]
 第 3 章
-[12
+[11
 
-]
-
-Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 58.
-
-
-Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 72.
-
-
-Overfull \hbox (36.79507pt too wide) in paragraph at lines 77--79
-[]\JY1/mc/m/it/10 　添え字の付けられた集合 $\OML/cmm/m/it/10 A[]\JY1/mc/m/it/10
- ， \OML/cmm/m/it/10 A[]; []  ; A[]$ \JY1/mc/m/it/10 を考える ． このような集合
-の集まり $\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 A[]; A[]; []  ; A[]\OMS/cmsy/m/n/1
-0 g$
+] [12] [13] [14]) [15]
+** Generating table of Definition
+(./main.thm
+Overfull \hbox (2.55557pt too wide) detected at line 14
+\OT1/cmr/m/n/10 2.1.10 
  []
 
-[13]
+[16
 
-Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 140.
-
-
-Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 148.
-
-[14]
-
-Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 155.
-
-) (./source/chapter3.tex [15] [16
-
-]
-第 4 章
-
-Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 31.
-
-[17
-
-] [18]
-第 5 章
-[19
-
-] [20
-
-]
-第 6 章
-[21
-
-]
-第 7 章
-[22
-
-]
-第 8 章
-[23
-
-]) (./source/chapter4.tex [24] [25
-
-]
-第 9 章
-[26
-
-])
-No file main.ind.
-
+]) [17]
+** Generating table of Theorem
+(./main.thm) 
 AED: lastpage setting LastPage
-[27]
+[18]
 \tf@thm=\write6
 \openout6 = `main.thm'.
 
@@ -496,14 +439,17 @@ AED: lastpage setting LastPage
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 2938 strings out of 493653
- 37697 string characters out of 6148873
- 107335 words of memory out of 5000000
- 6451 multiletter control sequences out of 15000+600000
+ 2919 strings out of 493653
+ 37378 string characters out of 6148873
+ 107337 words of memory out of 5000000
+ 6435 multiletter control sequences out of 15000+600000
  17200 words of font info for 68 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 30i,15n,43p,343b,429s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 33i,14n,43p,271b,421s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (27 pages, 51684 bytes).
+Output written on main.dvi (18 pages, 48628 bytes).
